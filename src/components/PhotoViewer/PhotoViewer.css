@@ -1,0 +1,7 @@
+.photo-viewer {
+  background: F0F6FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

@@ -1,0 +1,11 @@
+.dashboard {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dashboard .card {
+  width: calc(50% - 60px);
+  margin: 10px;
+}

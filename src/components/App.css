@@ -1,0 +1,30 @@
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+*, a, p, h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+*, a, p { color: #212121; }
+
+h1, h2, h3, h4, h5 {
+  color: #616161;
+  font-weight: 200;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 20px 20px 0 20px;
+  border-radius: 4px;
+  background: #fff;
+}
