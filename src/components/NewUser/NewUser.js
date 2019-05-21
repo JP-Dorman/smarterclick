@@ -6,7 +6,9 @@ import './NewUser.css';
 
 const NewUser = () => {
   const [success, setSuccess] = useState('');
-
+  const [nameValue, setNameValue] = useState('');
+  const [emailValue, setEmailValue] = useState('');
+  const [passwordValue, setPasswordValue] = useState('');
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -20,15 +22,30 @@ const NewUser = () => {
       <form onSubmit={onFormSubmit} className="card">
           <div className="input-container">
             <label htmlFor="input-name">Name:</label>
-            <input id="input-name" type="text" />
+            <input
+              id="input-name"
+              type="text"
+              onChange={(e) => setNameValue(e.target.value)}
+              value={nameValue}
+            />
           </div>
           <div className="input-container">
             <label htmlFor="input-email">Email:</label>
-            <input id="input-email" type="text" />
+            <input
+              id="input-email"
+              type="text"
+              onChange={(e) => setEmailValue(e.target.value)}
+              value={emailValue}
+            />
           </div>
           <div className="input-container">
             <label htmlFor="input-password">Password:</label>
-            <input id="input-password" type="password" />
+            <input
+              id="input-password"
+              type="password"
+              onChange={(e) => setPasswordValue(e.target.value)}
+              value={passwordValue}
+            />
           </div>
           <div className="input-container">
             <input className="submit" type="submit" value="submit" />
